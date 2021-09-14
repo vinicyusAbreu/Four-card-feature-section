@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem 1.8rem;
+}
+
+.cabeça {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.cabeça h1 {
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+    font-size: 1.6rem;
+}
+
+.cabeça h2 {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+.cabeça p {
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.direita,
+.cima,
+.baixo,
+.esquerda {
+    max-width: 26.6rem;
+    height: 13rem;
+    margin-bottom: 2rem;
+    padding: 2px;
+    box-shadow: 0px 10px 20px rgba(124, 121, 168, 0.253);
+    border: 3px solid hsl(0, 0%, 98%);
+    border-top-color: hsl(180, 62%, 55%);
+    border-radius: 0.6rem;
+    position: relative;
+}
+
+.titulo-card {
+    font-size: 1.5rem;
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.texto-card {
+    font-size: 1rem;
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+}
+
+.img-card {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+}
+
+.direita {
+    border-top-color: hsl(180, 62%, 55%);
+}
+
+.cima {
+    border-top-color: hsl(0, 78%, 62%);
+}
+
+.baixo {
+    border-top-color: hsl(34, 97%, 64%);
+}
+
+.esquerda {
+    border-top-color: hsl(212, 86%, 64%);
+}
+
+@media screen and (min-width:900px) {
+    .cabeça {
+        width: 46.6rem;
+    }
+    .cabeça h1,
+    .cabeça h2 {
+        font-size: 2rem;
+    }
+    .cabeça p {
+        font-size: 1.3rem;
+    }
+    .card {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+        padding: 0px 3.3rem;
+        position: relative;
+    }
+    .direita,
+    .cima,
+    .baixo,
+    .esquerda {
+        width: 23.3rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        height: 17rem;
+        box-sizing: border-box;
+    }
+    .baixo {
+        position: absolute;
+        top: 19rem;
+    }
+    .direita,
+    .esquerda {
+        top: 10rem;
+    }
+    .titulo-card,
+    .texto-card {
+        padding-left: 1rem;
+    }
+    .titulo-card {
+        padding-top: 1rem;
+    }
+}
